@@ -13,6 +13,18 @@ hantei('まちがい．残念でした答えは ◯ です．');
 hantei('まちがい．答えはもっと大きいですよ');
 hantei('まちがい．答えはもっと小さいですよ');
 
+/*
+if(kaisu>=4){
+  
+}else if(kaisu==3){
+
+}else if(kaisu > 2 && kotae < ){
+
+}else if(kaisu > 2 && kotae > ){
+
+}
+*/
+
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
