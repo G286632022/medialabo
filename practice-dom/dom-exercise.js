@@ -29,3 +29,8 @@ for (let i of w){
 	i.remove(); 
 } 
 // 練習4-5 箇条書き追加プログラム
+for (let i of w){
+	let li = document.createElement('li');
+	li.textContent = i.name + '...' + '緯度:' + i.lat + ', 軽度:' +  i.lng;
+	ul.insertAdjacentElement('beforeend', li);
+}
