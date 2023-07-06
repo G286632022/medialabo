@@ -21,7 +21,25 @@ p.style="text-emphasis: sesame green;"
 h2.insertAdjacentElement('afterend', p); 
 
 // 練習4-3 写真表作成プログラム
+let div = document.querySelector('div#phototable'); 
 
+let p1 = document.createElement('p'); 
+let t = document.createElement('img'); 
+t.setAttribute('src','taro.png'); 
+p1.insertAdjacentElement('beforeend', t); 
+div.insertAdjacentElement('beforeend',p1); 
+
+let p2 = document.createElement('p'); 
+let j = document.createElement('img'); 
+j.setAttribute('src','jiro.png'); 
+p2.insertAdjacentElement('beforeend', j); 
+div.insertAdjacentElement('beforeend',p2); 
+
+let p3 = document.createElement('p'); 
+let h = document.createElement('img'); 
+h.setAttribute('src','hanako.png'); 
+p3.insertAdjacentElement('beforeend', h); 
+div.insertAdjacentElement('beforeend',p3); 
 
 // 練習4-4 箇条書き削除プログラム
 let w = document.querySelectorAll('ul#location > li'); 
@@ -29,7 +47,8 @@ for (let i of w){
 	i.remove(); 
 } 
 // 練習4-5 箇条書き追加プログラム
-for (let i of w){
+ul = document.querySelector('ul#location'); 
+for (let i of data){
 	let li = document.createElement('li');
 	li.textContent = i.name + '...' + '緯度:' + i.lat + ', 軽度:' +  i.lng;
 	ul.insertAdjacentElement('beforeend', li);
