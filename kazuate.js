@@ -18,22 +18,22 @@ function hantei() {
   kaisu = kaisu + 1;
   k.textContent = kaisu;
 
-  let y = document.querySelector('input[name="yoso"]');
-  let yoso = Number(y.value);
+  let y = document.querySelector('input[name="yosou"]');
+  let yosou = Number(y.value);
 
   let a = document.querySelector('span#answer');
-  a.textContent.querySelector('p#result')
+  a.textContent = yosou
 
   if(kaisu >= 4){
     p.textContent = '答えは '+ kotae +' でした．すでにゲームは終わっています';
   }
-  if (kotae == yoso){
+  if (kotae == yosou && kaisu < 4){
     p.textContent = '正解です．おめでとう!';
-  } else if(kaisu == 3 && kotae != yoso){
+  } else if(kaisu == 3 && kotae != yosou){
     p.textContent = 'まちがい．残念でした答えは'+ kotae +'です．';
-  } else if (kotae <= yoso){
+  } else if (kotae <= yosou && kaisu <4){
     p.textContent = 'まちがい．答えはもっと小さいですよ';
-  } else if (kotae >= yoso){
+  } else if (kotae >= yosou && kaisu <4){
     p.textContent = 'まちがい．答えはもっと大きいですよ';
   }
 }
