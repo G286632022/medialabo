@@ -4,19 +4,25 @@
     <meta charset="utf-8">
     <title>project</title>
     <script src="weather.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="ajax-demo.js" defer></script>
   </head>
   <body>
-<p>世界の天気(検索結果1件)</p>
-<ul>
-    <li>都市名:北京市</li>
-    <li>緯度:116.3972</li>
-    <li>軽度:39.9075</li>
-    <li>天気:曇りがち</li>
-    <li>最低気温:<em>9.94</em></li>
-    <li>最高気温:9.94</li>
-    <li>湿度:14</li>
-    <li>風速:2.65</li>
-    <li>風向:197</li>
+    <p id = "place">
+    <p>Cairo カイロ （エジプト）<button id="360630">表示</button></p>
+    <p>Moscow モスクワ （ロシア）<button id="524901">表示</button></p>
+    <p>Johannesburg ヨハネスブルク （南アフリカ）<button id="993800">表示</button></p>
+    <p>Beijing 北京 （中華人民共和国）<button id="1816670">表示</button></p>
+    <p>Tokyo 東京 （日本）<button id="1850147">表示</button></p>
+    <p>Singapore シンガポール<button id="1880252">表示</button></p>
+    <p>Sydney シドニー （オーストラリア）<button id="2147714">表示</button></p>
+    <p>London ロンドン （イギリス）<button id="2643743">表示</button></p>
+    <p>Paris パリ （フランス）<button id="2968815">表示</button></p>
+    <p>Rio de Janeiro リオデジャネイロ （ブラジル）<button id="3451189">表示</button></p>
+    <p>New York ニューヨーク （アメリカ合衆国）<button id="5128581">表示</button></p>
+    <p>Los Angeles ロサンゼルス （アメリカ合衆国）<button id="5368361">表示</button></p>
+    </p>
+    
     <div id="result"></div>
   </body>
 </html>
