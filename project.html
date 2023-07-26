@@ -8,21 +8,65 @@
     <script src="ajax-demo.js" defer></script>
   </head>
   <body>
-    <p id = "place">
-    <p>Cairo カイロ （エジプト）<button id="360630">表示</button></p>
-    <p>Moscow モスクワ （ロシア）<button id="524901">表示</button></p>
-    <p>Johannesburg ヨハネスブルク （南アフリカ）<button id="993800">表示</button></p>
-    <p>Beijing 北京 （中華人民共和国）<button id="1816670">表示</button></p>
-    <p>Tokyo 東京 （日本）<button id="1850147">表示</button></p>
-    <p>Singapore シンガポール<button id="1880252">表示</button></p>
-    <p>Sydney シドニー （オーストラリア）<button id="2147714">表示</button></p>
-    <p>London ロンドン （イギリス）<button id="2643743">表示</button></p>
-    <p>Paris パリ （フランス）<button id="2968815">表示</button></p>
-    <p>Rio de Janeiro リオデジャネイロ （ブラジル）<button id="3451189">表示</button></p>
-    <p>New York ニューヨーク （アメリカ合衆国）<button id="5128581">表示</button></p>
-    <p>Los Angeles ロサンゼルス （アメリカ合衆国）<button id="5368361">表示</button></p>
+    <p>
+      <input type="checkbox" name="basyo" id="kairo" value="360630">
+      <label for="kairo">Cairo カイロ （エジプト）</label>
+
+      <input type="checkbox" name="basyo" id="mosukuwa" value="524901">
+      <label for="mosukuwa">Moscow モスクワ （ロシア）</label>
+
+      <input type="checkbox" name="basyo" id="yohanesuburuku" value="993800">
+      <label for="yohanesuburuku">Johannesburg ヨハネスブルク （南アフリカ）</label>
+
+      <input type="checkbox" name="basyo" id="pekin" value="1816670">
+      <label for="pekin">Beijing 北京 （中華人民共和国）</label>
+
+      <input type="checkbox" name="basyo" id="tokyo" value="1850147">
+      <label for="tokyo">Tokyo 東京 （日本）</label>
+
+      <input type="checkbox" name="basyo" id="singapore" value="1880252">
+      <label for="singapore">Singapore シンガポール</label>
+
+      <input type="checkbox" name="basyo" id="sydney" value="2147714">
+      <label for="sydney">Sydney シドニー （オーストラリア）</label>
+
+      <input type="checkbox" name="basyo" id="london" value="2643743">
+      <label for="london">London ロンドン （イギリス）</label>
+
+      <input type="checkbox" name="basyo" id="pari" value="2968815">
+      <label for="pari">Paris パリ （フランス）</label>
+
+      <input type="checkbox" name="basyo" id="rio" value="3451189">
+      <label for="rio">Rio de Janeiro リオデジャネイロ （ブラジル）</label>
+
+      <input type="checkbox" name="basyo" id="new york" value="5128581">
+      <label for="new york">New York ニューヨーク （アメリカ合衆国）</label>
+
+      <input type="checkbox" name="basyo" id="los" value="5368361">
+      <label for="los">Los Angeles ロサンゼルス （アメリカ合衆国）</label>
+      
+      <p><button id="answer">表示</button></p>
     </p>
-    
-    <div id="result"></div>
+    <p>
+      <span id ="name"></span>
+    </p>
+    <p>
+      <span id ="weather[0].description"></span>
+    </p>
+    <p>
+      <span id ="main.temp_min"></span>
+    </p>
+    <p>
+      <span id ="main.temp_max"></span>
+    </p>
+    <p>
+      <span id ="main.humidity"></span>
+    </p>
+    <p>
+      <span id ="wind.speed"></span>
+    </p>
+    <p>
+      <span id ="wind.deg"></span>
+    </p>
   </body>
 </html>

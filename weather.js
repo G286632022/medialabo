@@ -47,10 +47,7 @@ let data = {
 
 ////////// 課題3-2 ここからプログラムを書こう
 data.name;
-data.coord;
-data.weather[0].main; 
 data.weather[0].description; 
-data.main.temp;
 data.main.temp_min;
 data.main.temp_max;
 data.main.humidity;
@@ -64,7 +61,14 @@ b.addEventListener('click', sendRequest);
 // 通信を開始する処理
 function sendRequest() {
     // URL を設定
-    let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/{id}.json';
+    let i = document.querySelectorAll('input[name"basyo"]');
+    let id;
+    for(let r of i){
+      if(r.checked){
+        id=r.ariaValueMax;
+      }
+    }
+    let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/" + id + ".json"
 
     // 通信開始
     axios.get(url)
@@ -85,6 +89,25 @@ function showResult(resp) {
 
     let n = document.querySelector('span#name');
     n.textContent = "都市名：　"+data.name;
+
+    let des = document.querySelector('span#weather[0].description');
+    des.textContent = " 天気：　"+data.weather[0].description;
+
+    let tempmin = document.querySelector('span#main.temp_min');
+    tempmin.textContent = "最低気温：　"+data.main.temp_min;
+
+    let tempmax = document.querySelector('span#main.temp_max');
+    tempmax.textContent = "最高気温：　"+data.main.temp_max;
+
+    let hum = document.querySelector('span#main.humidity');
+    hum.textContent = "湿度：　"+data.main.humidity;
+
+    let windspeed = document.querySelector('span#wind.speed');
+    windspeed.textContent = "風速：　"+data.wind.speed;
+
+    let winddeg = document.querySelector('span#wind.deg');
+    winddeg.textContent = "風向：　"+data.wind.deg;
+
 }
 
 // 通信エラーが発生した時の処理
