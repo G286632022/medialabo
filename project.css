@@ -1,3 +1,7 @@
-em{
-    color: blue;
+div {
+    text-align: center;
+}
+p {
+    display: inline-block;
+    text-align: left;
 }
