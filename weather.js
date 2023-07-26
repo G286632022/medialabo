@@ -54,12 +54,12 @@ data.main.humidity;
 data.wind.speed;
 data.wind.deg;
 
-let b = document.querySelector('#sendRequest');
+let b = document.querySelector('#answer');
 b.addEventListener('click', sendRequest);
 
 
 // 通信を開始する処理
-function sendRequest() {
+function answer() {
     // URL を設定
     let i = document.querySelectorAll('input[name="basyo"]');
     let id;
