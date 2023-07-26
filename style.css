@@ -1,10 +1,10 @@
 h1 {
-    background-color: #ffbf00;
+    background-color: #acfffb;
 }
 
 h2 {
     color: black;
-	text-shadow: 1px 1px 10px #ff8f00;
+	text-shadow: 1px 1px 10px #71ffd7;
 }
 
 h3 {
@@ -22,5 +22,5 @@ div#zentai {
 
 div#zentai > div {
 	padding-left: 5px;
-	background-color: #fff5cf;
+	background-color: #e8faff;
 }
