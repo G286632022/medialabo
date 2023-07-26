@@ -83,20 +83,8 @@ function showResult(resp) {
         data = JSON.parse(data);
     }
 
-    // data をコンソールに出力
-    console.log(data);
-
-    // data.x を出力
-    console.log(data.name);
-    console.log(data.coord);
-    console.log(data.weather[0].main);
-    console.log(data.weather[0].description);
-    console.log(data.main.temp);
-    console.log(data.main.temp_min);
-    console.log(data.main.temp_max);
-    console.log(data.main.humidity);
-    console.log(data.wind.speed);
-    console.log(data.wind.deg);
+    let n = document.querySelector('span#name');
+    n.textContent = "都市名：　"+data.name;
 }
 
 // 通信エラーが発生した時の処理
