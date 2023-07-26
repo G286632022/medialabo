@@ -92,22 +92,22 @@ function showResult(resp) {
     let n = document.querySelector('span#name');
     n.textContent = "都市名：　"+data.name;
 
-    let des = document.querySelector('span#weather[0].description');
+    let des = document.querySelector('span#description');
     des.textContent = " 天気：　"+data.weather[0].description;
 
-    let tempmin = document.querySelector('span#main.temp_min');
+    let tempmin = document.querySelector('span#min');
     tempmin.textContent = "最低気温：　"+data.main.temp_min;
 
-    let tempmax = document.querySelector('span#main.temp_max');
+    let tempmax = document.querySelector('span#max');
     tempmax.textContent = "最高気温：　"+data.main.temp_max;
 
-    let hum = document.querySelector('span#main.humidity');
+    let hum = document.querySelector('span#humidity');
     hum.textContent = "湿度：　"+data.main.humidity;
 
-    let windspeed = document.querySelector('span#wind.speed');
+    let windspeed = document.querySelector('span#speed');
     windspeed.textContent = "風速：　"+data.wind.speed;
 
-    let winddeg = document.querySelector('span#wind.deg');
+    let winddeg = document.querySelector('span#deg');
     winddeg.textContent = "風向：　"+data.wind.deg;
 
 }
