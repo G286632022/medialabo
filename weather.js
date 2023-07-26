@@ -61,13 +61,15 @@ b.addEventListener('click', sendRequest);
 // 通信を開始する処理
 function sendRequest() {
     // URL を設定
-    let i = document.querySelectorAll('input[name"basyo"]');
+    let i = document.querySelectorAll('input[name="basyo"]');
     let id;
+
     for(let r of i){
       if(r.checked){
-        id=r.ariaValueMax;
+        id = r .value;
       }
     }
+
     let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/" + id + ".json"
 
     // 通信開始
